@@ -4,7 +4,7 @@ Team Members: Fnu Anu and Thanh Hoang
 A: Among the other options, I choose the option that says, "Within a Github action that runs whenever code is pushed" because this is automated to whenever I push the code and try merging it to the main branch so we can test for our changes to be validated before deployment. This allows earlier caught of bugs, as mentioned in today's class, based on how you set a priority test list in github actions or pipeline.
 
 2) Would you use an end to end test to check if a function is returning the correct output? (yes/no)
-A: No, I would not use end to end test to check if a function is returning the correct output because this can be tested easily through a jest test with expect `(__).toBe(__)` format.
+A: No, I would not use end to end test to check if a function is returning the correct output because this can be tested easily through a jest test (like a unit test) with expect `(__).toBe(__)` format.
 
 3) What is the difference between navigation and snapshot mode?
 The differences between navigation and snapshot mode is that navigation mode tests the webpage after it loads while snapshot mode simply tests the webpage in the state the website is in when that the snapshot mode tool is run for mostly accessibility issues found in that specific time only. Navigation mode also provided a lot of feedback on js, css and other minify or minimizations which snapshot mode did not really mentioned that. There is more detailed or general improvement feedback in navigation mode for general improvement in my opinion and more niche feedback in snapshot, as I observed in my experience.
