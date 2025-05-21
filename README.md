@@ -15,7 +15,7 @@ The differences between navigation and snapshot mode is that navigation mode tes
 So add the following accordingly:
 ```
     <html lang="en">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 ```
 1. Additionally, non-composited animations are any animation that triggers one of the earlier steps in the rendering pipeline, requiring more work to be done than necessary which is what our navigation mode seems to detect on Add to Cart buttons all over the website for 20 various items. Hence, practicing proper prevention to avoid non-composited animations will allow us to reduce jankiness and decrease CLS, which means a low-number equals to more stable website experiences versus a high CLS number means a much more janky experience.
 
