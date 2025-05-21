@@ -13,7 +13,8 @@ The differences between navigation and snapshot mode is that navigation mode tes
 2. Pre-portion the image sizes as when the images are bigger originally to being displayed smaller, this can increase the number of data and time a user uses to load the website on their device when we can size it already properly before using in our website.
 3. The following html tags at the beginning were missing to describe the language this html code is in, which will be english, which is for accessibility purposes or other languages respectively. This can be problematic because this assumes that the "page is in the default language that the user chose when setting up the screen reader" as said by the tool. I Viewport tag seems to avoid 300ms delay to user requests and adapt quickly to various devices with narrow screens. 
 So add the following accordingly:
-```<html lang="en">
+```
+    <html lang="en">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 ```
 1. Additionally, non-composited animations are any animation that triggers one of the earlier steps in the rendering pipeline, requiring more work to be done than necessary which is what our navigation mode seems to detect on Add to Cart buttons all over the website for 20 various items. Hence, practicing proper prevention to avoid non-composited animations will allow us to reduce jankiness and decrease CLS, which means a low-number equals to more stable website experiences versus a high CLS number means a much more janky experience.
